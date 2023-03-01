@@ -1,14 +1,10 @@
 import './App.css';
+import NavHeaders from './components/Navigation';
 
 function App() {
   return (
     <div className="App">
-      <div className="navigation">
-        <ul>Home</ul>
-        <ul>Club Dates</ul>
-        <ul>Meet & Greet</ul>
-        <ul>Recordings</ul>
-      </div>
+      <NavHeaders />
     </div>
   )
 }
