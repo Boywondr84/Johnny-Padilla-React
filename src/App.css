@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Staatliches&display=swap");
+
 .navigation {
   background-color: black;
   padding-bottom: 50px;
@@ -26,4 +28,39 @@
   to {
     color: white;
   }
+}
+
+.landing {
+  background-color: black;
+  height: 525px;
+}
+
+#landing-video {
+  width: 100%;
+  max-height: 560px;
+  opacity: 0;
+  animation-name: smokeImage;
+  animation-duration: 11s;
+}
+
+@keyframes smokeImage {
+  from {
+    opacity: .35;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.landing h1 {
+  color: rgba(253, 128, 8, 1.00);
+  /* padding-top: 5px; */
+  position: absolute;
+  left: 56%;
+  top: 49%;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.4;
+  word-spacing: 12px;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
 }
