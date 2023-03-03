@@ -45,7 +45,7 @@
 
 @keyframes smokeImage {
   from {
-    opacity: .35;
+    opacity: .45;
   }
   to {
     opacity: 0;
