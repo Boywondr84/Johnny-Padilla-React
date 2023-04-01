@@ -5,7 +5,7 @@
   padding-bottom: 50px;
 }
 
-.nav-bar {
+.nav-bar-item {
   display: inline-flex;
   flex-direction: row;
   color: white;
@@ -14,7 +14,7 @@
   font-size: 20px;
 }
 
-.nav-bar ul {
+.nav-bar-item a {
   margin-left: 12px;
   margin-right: 38px;
   animation-name: changeCol;
@@ -25,14 +25,41 @@
   from {
     color: black;
   }
+
   to {
     color: white;
   }
 }
 
+/* Club Modal */
+.club-modal-trigger {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  display: inline;
+  animation-name: changeCol;
+  animation-duration: 25s;
+  cursor: pointer;
+}
+
+.club-modal-trigger:hover {
+  text-decoration: underline;
+}
+
+/* Club Modal Table */
+.table th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+.table td {
+  font-size: 20px;
+}
+
 .landing {
   background-color: black;
-  height: 525px;
+  height: 100%;
 }
 
 #landing-video {
@@ -47,6 +74,7 @@
   from {
     opacity: .45;
   }
+
   to {
     opacity: 0;
   }
