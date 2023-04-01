@@ -9,16 +9,15 @@
   display: inline-flex;
   flex-direction: row;
   color: white;
-  padding-top: 100px;
-  padding-left: 28px;
+  padding-top: 117px;
+  padding-left: 52px;
   font-size: 20px;
-}
-
-.nav-bar-item a {
-  margin-left: 12px;
-  margin-right: 38px;
   animation-name: changeCol;
   animation-duration: 25s;
+}
+
+.nav-bar-item:hover {
+  text-decoration: underline;
 }
 
 @keyframes changeCol {
