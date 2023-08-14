@@ -8,7 +8,7 @@ function MainLanding() {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setTextName (name.slice(0, textName.length + 1));
-        }, 280);
+        }, 400);
         return () => clearTimeout(timeout);
     }, [textName]);
 

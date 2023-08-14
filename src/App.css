@@ -1,24 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Staatliches&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navigation {
   background-color: black;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 .nav-bar-item {
   display: inline-flex;
   flex-direction: row;
-  color: white;
   padding-top: 117px;
-  padding-left: 52px;
-  font-size: 20px;
+  padding-left: 82px;
+  font-size: 25px;
+}
+
+.nav-bar-item a {
+  color: white;
   animation-name: changeCol;
   animation-duration: 25s;
 }
 
-.nav-bar-item:hover {
+/* .nav-bar-item:hover {
   text-decoration: underline;
-}
+} */
 
 @keyframes changeCol {
   from {
@@ -59,14 +66,16 @@
 .landing {
   background-color: black;
   height: 100%;
+  /* margin-bottom: 40px; */
 }
 
 #landing-video {
   width: 100%;
-  max-height: 560px;
+  max-height: 500px;
+  /* max-height: 100%; */
   opacity: 0;
   animation-name: smokeImage;
-  animation-duration: 11s;
+  animation-duration: 14s;
 }
 
 @keyframes smokeImage {
@@ -83,11 +92,97 @@
   color: rgba(253, 128, 8, 1.00);
   /* padding-top: 5px; */
   position: absolute;
-  left: 56%;
-  top: 49%;
-  font-size: 4rem;
+  left: 50%;
+  top: 41%;
+  font-size: 6rem;
   font-weight: 300;
   line-height: 1.4;
   word-spacing: 12px;
   font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Meet Component */
+.meet img {
+  height: 580px;
+  width: 40%;
+  /* border-top-left-radius: 17%; */
+  border-bottom-left-radius: 17%;
+  float: right;
+}
+
+.meet p {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  margin-top: 50px;
+  margin-left: 65px;
+  width: 50%;
+  color: black;
+}
+
+#meet-events {
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: 500;
+  color: #53768D;
+  font-style: oblique;
+  width: 60%;
+  margin-top: 40px;
+  padding-left: 145px;
+  word-spacing: 9px;
+}
+
+#meet-events ul {
+  padding-bottom: 12px;
+}
+
+#meet-bio p {
+  font-size: 28px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Live Component */
+#live {
+  margin-top: 100px;
+  border-top: 15px solid #CFC2A3;
+  margin: 0 29% 0 29%;
+}
+
+#live p {
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.concert-info {
+  display: inline-block;
+  margin-left: -38%;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 18px;
+}
+
+.concert-button {
+  float: right;
+  margin-right: -38%;
+  margin-top: 18px;
+}
+
+.concert-button button {
+  height: 70px;
+  width: 250px;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px;
+  cursor: pointer;
+  margin-top: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+#fruitcakes img {
+  height: 300px;
+  width: 300px;
 }

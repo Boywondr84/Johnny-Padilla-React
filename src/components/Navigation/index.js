@@ -46,20 +46,23 @@ function NavHeaders() {
     });
 
     return (
-        <div className="navigation">
-            <div className="nav-bar-item">
-                <ul>Home</ul>
-            </div>
-            <div className="nav-bar-item">
-                <ul>Club Dates</ul>
-            </div>
-            <div className="nav-bar-item">
-                <ul>Meet & Greet</ul>
-            </div>
-            <div className="nav-bar-item">
-                <ul>Recordings</ul>
-            </div>
-        </div>
+                <div className="navigation">
+                    <div className="nav-bar-item">
+                        <ul><a href="#home">Home</a></ul>
+                    </div>
+                    <div className="nav-bar-item">
+                        <ul><a href="#live">Live</a></ul>
+                    </div>
+                    <div className="nav-bar-item">
+                        <ul><a href="#meet">Meet</a></ul>
+                    </div>
+                    <div className="nav-bar-item">
+                        <a href="#listen">Listen</a>
+                    </div>
+                    <div className="nav-bar-item">
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
     )
 }
 
